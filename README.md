@@ -1,5 +1,5 @@
 
-# API REACTIVE COM WEB FLUX
+# REACTIVE API COM WEB FLUX
 
 ## STACK 
 
@@ -9,6 +9,7 @@
   * Conexão com banco -> R2DBC
 * Postgresql e H2 
 * Auditoria > criação e atualização das entidades
+* Validation
  
 
 #### Decisões técnicas
@@ -45,21 +46,21 @@
 
 ##### Ambiente Local
 
-Clonar repositório git
-Construir o projeto:
-`./mvnw clean package`
-Executar:
-`java -jar place-service/target/place-service-0.0.1-SNAPSHOT.jar`
-A API poderá ser acessada em localhost:8080 🚀
+Clonar repositório git<br/>
+Construir o projeto: <br/>
+`./mvnw clean package` <br/>
+Executar: <br/>
+`java -jar place-service/target/place-service-0.0.1-SNAPSHOT.jar` <br/>
+A API poderá ser acessada em localhost:8080 🚀 <br/>
 
 
 ##### DOCKER
 
-Clonar repositório git
-Construir o projeto:
-`./mvnw clean package`
-Construir a imagem:
-`./mvnw spring-boot:build-image`
-Executar o container:
-`docker run --name place-service -p 8080:8080  -d place-service:0.0.1-SNAPSHOT`
-A API poderá ser acessada em localhost:8080 🚀
+Clonar repositório git <br/>
+Construir o projeto: <br/>
+`./mvnw clean package` <br/>
+Construir a imagem: <br/>
+`./mvnw spring-boot:build-image` <br/>
+Executar o container: <br/>
+`docker run --name place-service -p 8080:8080  -d place-service:0.0.1-SNAPSHOT` <br/>
+A API poderá ser acessada em localhost:8080 🚀 
